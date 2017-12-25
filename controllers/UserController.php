@@ -6,24 +6,24 @@ class UserController
 	{
 		$email = '';
 		$password = '';
-		$subdomain = '';
+		$sub = '';
 
 		if (isset($_POST['submit'])) {
 			$email = $_POST['email'];
 			$password = $_POST['password'];
-			$subdomain = $_POST['subdomain'];
+			$sub = $_POST['domain'];
 
-//			$errors = false;
-//
-//			$userId = User::checkUserData($email, $password);
+			$errors = false;
 
-//			if($userId == false) {
-//				$errors[] = 'Неверный e-mail или пароль!';
-//			} else {
-//				User::auth($userId);
+			$logged = User::checkUserData($email, $password, $sub);
+
+			if($logged == false) {
+				$errors[] = 'Ошибка соединения!';
+			} else {
+				User::auth($email);
 
 				header("Location: /front/");
-//			}
+			}
 		}
 
 		require_once(ROOT.'/views/site/index.php');

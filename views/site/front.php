@@ -4,7 +4,7 @@
 <div class="container">
 	<div class="row">
 
-
+        <?php echo $_SESSION['email']; ?>
 
 	</div>
 </div>

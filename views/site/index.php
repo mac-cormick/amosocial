@@ -24,7 +24,7 @@
                     </div>
                     <div class="form-group">
                         <label for="password">Subdomain</label>
-                        <input class="form-control" type="text" name="subdomain" id="subdomain" value="">
+                        <input class="form-control" type="text" name="domain" id="domain" value="">
                     </div>
                     <input type="submit" name="submit" class="btn btn-primary" value="Войти"></input>
                     <a href="/register">Регистрация</a>
