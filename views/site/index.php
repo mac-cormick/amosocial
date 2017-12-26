@@ -16,18 +16,17 @@
                 <form action="" method="post">
                     <div class="form-group">
                         <label for="email">User Login</label>
-                        <input class="form-control" type="email" name="email" id="email" value="">
+                        <input class="form-control" type="email" name="email" id="email" value="" required>
                     </div>
                     <div class="form-group">
                         <label for="password">User Hash</label>
-                        <input class="form-control" type="password" name="password" id="password" value="">
+                        <input class="form-control" type="password" name="password" id="password" value="" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Subdomain</label>
-                        <input class="form-control" type="text" name="domain" id="domain" value="">
+                        <input class="form-control" type="text" name="domain" id="domain" value="" required>
                     </div>
                     <input type="submit" name="submit" class="btn btn-primary" value="Войти"></input>
-                    <a href="/register">Регистрация</a>
                 </form>
             </div>
         </div>

@@ -1,17 +1,13 @@
 <?php
 
 return array(
+        'addcontacts' => 'front/addcontacts',
+		'addtextfield' => 'front/addtextfield',
+		'addmulti' => 'front/addmulti',
+		'addnote' => 'front/addnote',
+		'finishtask' => 'front/finishtask',
 
-		'newsdelete/([0-9]+)' => 'news/delete/$1',
-		'newsedit' => 'news/edit',
-		'news' => 'news/index',
-		'add' => 'news/add',
-		
-		'user' => 'user/enter',
-
-		'register' => 'user/register',
-		'front' => 'site/front',
-		'account' => 'user/account',
+		'front' => 'front/front',
 		'logout' => 'user/logout',
 		'' => 'user/login',
 	);

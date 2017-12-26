@@ -95,3 +95,7 @@ i.fa-heart span {
 	margin-bottom: 50px;
 }
 
+.text-success, .text-danger {
+	font-size: 22px;
+}
+
